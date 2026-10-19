@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Nauval Armansia, S.T.</title>
+    <!-- Tailwind CSS CDN untuk styling modern, bersih, & formal -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Container Utama Portfolio (Max-width untuk tampilan elegan ala dokumen/A4 lanskap) -->
+    <main class="max-w-5xl mx-auto bg-white shadow-2xl my-8 md:my-12 overflow-hidden border border-slate-200">
+
+        <!-- HEADER / HERO SECTION -->
+        <header class="bg-slate-900 text-white p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 border-b-4 border-blue-600">
+            <!-- Foto Profil -->
+            <div class="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-slate-700 shadow-lg shrink-0 bg-slate-800">
+                <!-- Ganti path src dengan foto profil Anda di folder assets -->
+                <img src="assets/foto-profil.jpg" alt="Nauval Armansia" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=Foto+Profil'">
+            </div>
+            <!-- Identitas -->
+            <div class="text-center md:text-left space-y-2">
+                <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">NAUVAL ARMANSIA, S.T.</h1>
+                <p class="text-blue-400 font-semibold text-lg">Civil Engineer | Construction Management</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-slate-300 pt-2">
+                    <span>📍 DI Yogyakarta | Kab. Brebes</span>
+                    <span>📞 082328904594</span>
+                    <span>✉️ naufal.armansia@gmail.com</span>
+                    <span>🔗 linkedin.com/in/nauvalarmansia</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- KONTEN UTAMA -->
+        <div class="p-8 md:p-12 space-y-12">
+
+            <!-- PROFIL SINGKAT -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-900 border-b-2 border-slate-200 pb-2 mb-4 uppercase tracking-wider">Profil Singkat</h2>
+                <p class="text-slate-600 leading-relaxed text-justify">
+                    Lulusan Teknik Sipil Universitas Islam Indonesia dengan IPK 3.54/4.00 dan spesialisasi di bidang Manajemen Konstruksi. Memiliki pengalaman praktis di proyek skala nasional (PT PP (Persero) Tbk) pada divisi Quality Control & Engineer Operasional, serta keahlian mendalam dalam penerapan <i>Lean Construction</i>, pemodelan manajemen proyek, perencanaan anggaran (RAB/BoQ), analisis struktur, hingga manajemen tender. Aktif dalam organisasi keprofesian konstruksi serta berpengalaman memimpin berbagai kepanitiaan teknik sipil berskala nasional.
+                </p>
+            </section>
+
+            <!-- KEAHLIAN & KEANGGOTAAN PROFESIONAL -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <section>
+                    <h2 class="text-xl font-bold text-slate-900 border-b-2 border-slate-200 pb-2 mb-4 uppercase tracking-wider">Keahlian Profesional</h2>
+                    <ul class="space-y-2 text-sm text-slate-700">
+                        <li><strong>Drafting / BIM:</strong> AutoCAD, Revit, Archicad</li>
+                        <li><strong>Structural & Civil:</strong> ETABS, SAP2000, AutoCAD Civil 3D</li>
+                        <li><strong>Cost & Scheduling:</strong> MS Project, Excel (VBA/S-Curve), Glodon Cubicost</li>
+                        <li><strong>Management:</strong> Last Planner System, Takt Time, Waste Mitigation</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="text-xl font-bold text-slate-900 border-b-2 border-slate-200 pb-2 mb-4 uppercase tracking-wider">Keanggotaan Profesi</h2>
+                    <div class="text-sm text-slate-700 space-y-2">
+                        <p><strong>Ikatan Ahli Manajemen Konstruksi Ramping Indonesia (IAMKRI)</strong></p>
+                        <p class="text-slate-500">Anggota (November 2026 – Sekarang) — Aktif mengikuti perkembangan keilmuan dan standar praktik manajemen konstruksi ramping (*lean construction*).</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- PORTOFOLIO TUGAS BESAR & PROYEK (LAYOUT DENGAN SLOT FOTO) -->
+            <section class="space-y-10">
+                <h2 class="text-xl font-bold text-slate-900 border-b-2 border-slate-200 pb-2 mb-6 uppercase tracking-wider">Portofolio Tugas Besar & Proyek Utama</h2>
+
+                <!-- PROYEK 1: LEAN CONSTRUCTION -->
+                <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 shadow-sm grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-5">
+                        <!-- SLOT FOTO DOKUMENTASI PROYEK 1 -->
+                        <div class="h-48 rounded-md overflow-hidden bg-slate-200 border border-slate-300 shadow-inner flex items-center justify-center">
+                            <img src="assets/project-lean.jpg" alt="Lean Construction Simulation" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400x250?text=Foto+Lean+Construction'">
+                        </div>
+                    </div>
+                    <div class="md:col-span-7 space-y-3">
+                        <span class="text-xs font-semibold bg-blue-100 text-blue-800 px-2.5 py-1 rounded">Simulasi & Kompetisi</span>
+                        <h3 class="text-lg font-bold text-slate-900">1. Lean Construction Competition (Simulasi & Optimasi Proyek)</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Melakukan simulasi pembangunan secara terampil menggunakan prinsip <i>Lean Construction</i> untuk mengeliminasi pemborosan (waste material, waiting time, unnecessary motion). Menerapkan indikator <i>Last Planner System</i> (LPS) dan <i>Percent Plan Complete</i> (PPC) guna memastikan keandalan alur kerja di lapangan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PROYEK 2: PERANCANGAN JALAN RAYA -->
+                <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 shadow-sm grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-5">
+                        <!-- SLOT FOTO DOKUMENTASI PROYEK 2 -->
+                        <div class="h-48 rounded-md overflow-hidden bg-slate-200 border border-slate-300 shadow-inner flex items-center justify-center">
+                            <img src="assets/project-jalan.jpg" alt="Perancangan Jalan Raya" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400x250?text=Foto+Perancangan+Jalan'">
+                        </div>
+                    </div>
+                    <div class="md:col-span-7 space-y-3">
+                        <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded">Infrastructure Engineering</span>
+                        <h3 class="text-lg font-bold text-slate-900">2. Perancangan Alinyemen & Manajemen Biaya Jalan Raya</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Merancang layout alinyemen horizontal dan vertikal jalan raya sesuai standar Bina Marga/SNI. Menyusun Rencana Anggaran Biaya (RAB), <i>Bill of Quantities</i> (BoQ), AHSP, Kurva S, serta manajemen konstruksi untuk mobilisasi alat berat dan mitigasi risiko pekerjaan tanah.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PROYEK 3: PERANCANGAN GEDUNG -->
+                <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 shadow-sm grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-5">
+                        <!-- SLOT FOTO DOKUMENTASI PROYEK 3 -->
+                        <div class="h-48 rounded-md overflow-hidden bg-slate-200 border border-slate-300 shadow-inner flex items-center justify-center">
+                            <img src="assets/project-gedung.jpg" alt="Perancangan Gedung" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400x250?text=Foto+Perancangan+Gedung'">
+                        </div>
+                    </div>
+                    <div class="md:col-span-7 space-y-3">
+                        <span class="text-xs font-semibold bg-purple-100 text-purple-800 px-2.5 py-1 rounded">Structural & Cost Engineering</span>
+                        <h3 class="text-lg font-bold text-slate-900">3. Perancangan Struktur Gedung Bertingkat & DED</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Melakukan analisis struktur gedung terhadap beban gempa menggunakan software struktur sesuai SNI. Menyusun draft Gambar Kerja (DED), BoQ, RAB, AHSP, metode kerja (*work method statement*), serta <i>time schedule</i> menggunakan Microsoft Project.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PROYEK 4: PERLOMBAAN TENDER -->
+                <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 shadow-sm grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-5">
+                        <!-- SLOT FOTO DOKUMENTASI PROYEK 4 -->
+                        <div class="h-48 rounded-md overflow-hidden bg-slate-200 border border-slate-300 shadow-inner flex items-center justify-center">
+                            <img src="assets/project-tender.jpg" alt="Perlombaan Tender" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400x250?text=Foto+Perlombaan+Tender'">
+                        </div>
+                    </div>
+                    <div class="md:col-span-7 space-y-3">
+                        <span class="text-xs font-semibold bg-amber-100 text-amber-800 px-2.5 py-1 rounded">Bid Management</span>
+                        <h3 class="text-lg font-bold text-slate-900">4. Perlombaan Tender Konstruksi (Bid Management & Estimation)</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Mengelola penyusunan master schedule dan kurva S penawaran tender. Melakukan alokasi tenaga kerja (*man power*) dan menyusun proposal metode pelaksanaan konstruksi yang inovatif serta kompetitif.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PENGALAMAN KERJA & ORGANISASI -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+                <section>
+                    <h2 class="text-xl font-bold text-slate-900 border-b-2 border-slate-200 pb-2 mb-4 uppercase tracking-wider">Pengalaman Kerja</h2>
+                    <ul class="space-y-4 text-sm text-slate-700">
+                        <li>
+                            <strong class="text-slate-900">Engineer - Operational</strong> | PT. PP (Persero) Tbk<br>
+                            <span class="text-xs text-slate-500">Project Mandiri Financial Center, CBD, PIK 2 (2026)</span>
+                        </li>
+                        <li>
+                            <strong class="text-slate-900">Quality Control</strong> | PT. PP (Persero) Tbk<br>
+                            <span class="text-xs text-slate-500">Project Twin Towers Undip, Semarang (2025)</span>
+                        </li>
+                        <li>
+                            <strong class="text-slate-900">Asisten Dosen</strong> | Departemen Teknik Sipil UII<br>
+                            <span class="text-xs text-slate-500">Manajemen Konstruksi, Gambar Teknik, & Survey (2024–2026)</span>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="text-xl font-bold text-slate-900 border-b-2 border-slate-200 pb-2 mb-4 uppercase tracking-wider">Pengalaman Organisasi</h2>
+                    <ul class="space-y-4 text-sm text-slate-700">
+                        <li>
+                            <strong class="text-slate-900">Penanggung Jawab Acara</strong> | K2R Neo 3.1 UII<br>
+                            <span class="text-xs text-slate-500">Memimpin koordinasi divisi dan kelancaran teknis acara.</span>
+                        </li>
+                        <li>
+                            <strong class="text-slate-900">Anggota Riset & Teknologi</strong> | UKM Epsilon JTS UII<br>
+                            <span class="text-xs text-slate-500">Periode 2024–2025 (Riset internal & teknologi konstruksi).</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- PENDIDIKAN -->
+            <section class="pt-4">
+                <h2 class="text-xl font-bold text-slate-900 border-b-2 border-slate-200 pb-2 mb-4 uppercase tracking-wider">Pendidikan</h2>
+                <div class="text-sm text-slate-700">
+                    <p class="font-bold text-slate-900">Universitas Islam Indonesia (UII) — S1 Teknik Sipil (IPK: 3.54 / 4.00)</p>
+                    <p class="text-slate-600">Spesialisasi: Manajemen Konstruksi</p>
+                    <p class="text-xs text-slate-500 mt-1"><strong>Tugas Akhir:</strong> *"Artificial Neural Network Modeling for Classifying Labor Productivity Effectiveness Based on Last Planner System Indicators"* (Studi Kasus Proyek Mandiri Tower PIK 2)</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="bg-slate-100 text-center py-6 text-xs text-slate-500 border-t border-slate-200">
+            &copy; 2026 Nauval Armansia, S.T. — Professional Portfolio. Dibuat khusus untuk persyaratan lamaran pekerjaan.
+        </footer>
+
+    </main>
+
+</body>
+</html>
